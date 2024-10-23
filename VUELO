@@ -1,0 +1,88 @@
+package Vuelo;
+
+import java.util.ArrayList;
+
+public class Vuelo {
+	
+	private int numVuelo;
+	private Ciudad ciudadLlegada;
+	private Ciudad ciudadSalida;
+	private ArrayList<Silla> listaPasajeros;
+	private Piloto Piloto;
+	private int numSillas;
+	private int horaSalida;
+	private int duracion;
+	
+	public Vuelo(int numVuelo, Ciudad ciudadLlegada, Ciudad ciudadSalida, Piloto piloto, int numSillas,
+			int horaSalida, int duracion) {
+		super();
+		this.numVuelo = numVuelo;
+		this.ciudadLlegada = ciudadLlegada;
+		this.ciudadSalida = ciudadSalida;
+		this.Piloto = piloto;
+		this.numSillas = numSillas;
+		this.horaSalida = horaSalida;
+		this.duracion = duracion;
+	}
+	
+	public int getNumVuelo() {
+		return numVuelo;
+	}
+	public void setNumVuelo(int numVuelo) {
+		this.numVuelo = numVuelo;
+	}
+	public Ciudad getCiudadLlegada() {
+		return ciudadLlegada;
+	}
+	public void setCiudadLlegada(Ciudad ciudadLlegada) {
+		this.ciudadLlegada = ciudadLlegada;
+	}
+	public Ciudad getCiudadSalida() {
+		return ciudadSalida;
+	}
+	public void setCiudadSalida(Ciudad ciudadSalida) {
+		this.ciudadSalida = ciudadSalida;
+	}
+	public Piloto getPiloto() {
+		return Piloto;
+	}
+	public void setPiloto(Piloto piloto) {
+		Piloto = piloto;
+	}
+	public int getNumSillas() {
+		return numSillas;
+	}
+	public void setNumSillas(int numSillas) {
+		this.numSillas = numSillas;
+	}
+	public int getHoraSalida() {
+		return horaSalida;
+	}
+	public void setHoraSalida(int horaSalida) {
+		this.horaSalida = horaSalida;
+	}
+	public int getDuracion() {
+		return duracion;
+	}
+	public void setDuracion(int duracion) {
+		this.duracion = duracion;
+	}
+	@Override
+	public String toString() {
+		return "Vuelo [numVuelo=" + numVuelo + ", ciudadLlegada=" + ciudadLlegada + ", ciudadSalida=" + ciudadSalida
+				+ ", listaPasajeros=" + listaPasajeros + ", Piloto=" + Piloto + ", numSillas=" + numSillas
+				+ ", horaSalida=" + horaSalida + ", duracion=" + duracion + "]";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+}
